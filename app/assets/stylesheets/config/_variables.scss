@@ -2,28 +2,37 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Raleway", "Helvetica", "sans-serif";
+@font-face {
+  font-family: "Proxima Nova";
+  src:font-url('proxima/Proxima-Nova-Regular.eot');
+  src:font-url('proxima/Proxima-Nova-Regular.eot?#iefix') format('embedded-opentype'),
+      font-url('proxima/Proxima-Nova-Regular.woff') format('woff'),
+      font-url('proxima/Proxima-Nova-Regular.woff2') format('woff2'),
+      font-url('proxima/Proxima-Nova-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src:font-url('proxima/Proxima-Nova-Bold.eot');
+  src:font-url('proxima/Proxima-Nova-Bold.eot?#iefix') format('embedded-opentype'),
+      font-url('proxima/Proxima-Nova-Bold.woff') format('woff'),
+      font-url('proxima/Proxima-Nova-Bold.woff2') format('woff2'),
+      font-url('proxima/Proxima-Nova-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
 
-// Local fonts (uncomment following lines)
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+$base-font: "Proxima Nova", "Helvetica", "sans-serif", sans-serif;
+$headings-font: "Proxima Nova", "Helvetica", "sans-serif", sans-serif;;
 
-// Font-size and line-height
+// Typography variables
 $base-size: 16px;
 $base-height: 1.4;
+$base-weight: 400;
 
-/* -------------------------------------
- * Colors
- * ------------------------------------- */
-// Scheme
+$headings-weight: 700;
+$headings-color: #404D5C;
+
+// Color Scheme
 $brand-color: #D23333;
 
 $red: #EE5F5B;
@@ -32,3 +41,5 @@ $yellow: #FDB631;
 $orange: #E67E22;
 $green: #32B796;
 $gray: #000000;
+
+$body-background-color: #FCFCFC;
